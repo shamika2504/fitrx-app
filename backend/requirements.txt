@@ -7,6 +7,7 @@ charset-normalizer==3.4.7
 click==8.3.2
 cryptography==46.0.7
 fastapi==0.135.3
+google-genai==2.4.0
 google-api-core==2.30.3
 google-auth==2.49.2
 google-cloud-bigquery==3.41.0
