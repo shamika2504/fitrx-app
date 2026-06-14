@@ -2,5 +2,7 @@ venv/
 __pycache__/
 *.pyc
 .env
+.env.local
+.env.*.local
 *.csv
 .claude/

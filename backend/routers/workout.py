@@ -1,12 +1,15 @@
+import asyncio
+import os
+
 from fastapi import APIRouter, HTTPException
 from google.cloud import bigquery
-import os
 
 router = APIRouter()
 client = bigquery.Client(project=os.getenv("GCP_PROJECT_ID"))
 
+
 @router.get("/summary/{participant_id}")
-def get_workout_summary(participant_id: int):
+async def get_workout_summary(participant_id: int):
     query = """
         SELECT
             activity_type,
@@ -24,16 +27,18 @@ def get_workout_summary(participant_id: int):
             bigquery.ScalarQueryParameter("participant_id", "INT64", participant_id)
         ]
     )
-    results = client.query(query, job_config=job_config).result()
+    results = await asyncio.to_thread(
+        lambda: list(client.query(query, job_config=job_config).result())
+    )
     return [dict(row) for row in results]
 
 
 @router.get("/trend/{participant_id}")
-def get_calorie_trend(participant_id: int):
+async def get_calorie_trend(participant_id: int):
     query = """
         SELECT
             date,
-            ROUND(AVG(calories_burned), 2) as calories_burned,
+            ROUND(calories_burned, 2) as calories_burned,
             activity_type,
             duration_minutes
         FROM `fitrx_warehouse.fact_workout_logs`
@@ -45,5 +50,7 @@ def get_calorie_trend(participant_id: int):
             bigquery.ScalarQueryParameter("participant_id", "INT64", participant_id)
         ]
     )
-    results = client.query(query, job_config=job_config).result()
+    results = await asyncio.to_thread(
+        lambda: list(client.query(query, job_config=job_config).result())
+    )
     return [dict(row) for row in results]

@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "user_context": {
+      "recent_workouts": ["45min steady run", "rest", "30min walk"],
+      "biometrics": {"weight_kg": 82, "resting_hr": 72, "fitness_level": "beginner"},
+      "goal": "weight loss"
+    },
+    "question": "Should I do cardio or strength training today to lose weight faster?",
+    "ideal_response_criteria": [
+      "acknowledges beginner fitness level",
+      "references recent workout history",
+      "gives a specific recommendation with reasoning",
+      "mentions sustainable approach over quick fixes"
+    ]
+  },
+  {
+    "id": 2,
+    "user_context": {
+      "recent_workouts": ["45min run", "strength training upper body", "rest", "HIIT 30min"],
+      "biometrics": {"weight_kg": 78, "resting_hr": 62, "fitness_level": "intermediate"},
+      "goal": "improve endurance"
+    },
+    "question": "Should I do HIIT or steady-state cardio tomorrow?",
+    "ideal_response_criteria": [
+      "mentions recovery consideration given recent HIIT",
+      "references user's recent workout history",
+      "gives a specific actionable recommendation",
+      "explains the reasoning for endurance improvement"
+    ]
+  },
+  {
+    "id": 3,
+    "user_context": {
+      "recent_workouts": ["chest/triceps", "back/biceps", "legs", "shoulders", "rest"],
+      "biometrics": {"weight_kg": 88, "resting_hr": 58, "fitness_level": "advanced"},
+      "goal": "muscle gain"
+    },
+    "question": "My bench press has stalled for 3 weeks at 100kg. What should I adjust?",
+    "ideal_response_criteria": [
+      "addresses plateau breaking strategies",
+      "suggests specific programming changes",
+      "references user's advanced level",
+      "mentions deload or volume adjustment"
+    ]
+  },
+  {
+    "id": 4,
+    "user_context": {
+      "recent_workouts": ["20min jog", "rest", "25min jog"],
+      "biometrics": {"weight_kg": 75, "resting_hr": 75, "fitness_level": "beginner"},
+      "goal": "general fitness"
+    },
+    "question": "My knees hurt after running. Should I stop completely?",
+    "ideal_response_criteria": [
+      "does not recommend stopping completely without professional advice",
+      "suggests lower-impact alternatives",
+      "references beginner status and potential cause",
+      "recommends gradual progression"
+    ]
+  },
+  {
+    "id": 5,
+    "user_context": {
+      "recent_workouts": ["morning run 5km", "evening gym session", "morning run 6km"],
+      "biometrics": {"weight_kg": 68, "resting_hr": 64, "fitness_level": "intermediate"},
+      "goal": "weight loss"
+    },
+    "question": "Should I eat before my morning workouts if I want to lose fat?",
+    "ideal_response_criteria": [
+      "addresses fasted vs fed training debate",
+      "references user's workout type (running)",
+      "gives a personalized recommendation",
+      "mentions performance implications"
+    ]
+  },
+  {
+    "id": 6,
+    "user_context": {
+      "recent_workouts": ["marathon race (42.2km)", "rest", "rest", "20min easy walk"],
+      "biometrics": {"weight_kg": 70, "resting_hr": 56, "fitness_level": "advanced"},
+      "goal": "recovery"
+    },
+    "question": "I ran a marathon 3 days ago. When should I start training again?",
+    "ideal_response_criteria": [
+      "acknowledges marathon recovery timeline",
+      "gives a specific return-to-training schedule",
+      "mentions muscle repair and adaptation",
+      "warns against rushing back"
+    ]
+  },
+  {
+    "id": 7,
+    "user_context": {
+      "recent_workouts": ["no recent workouts — just starting out"],
+      "biometrics": {"weight_kg": 65, "resting_hr": 80, "fitness_level": "beginner"},
+      "goal": "muscle gain"
+    },
+    "question": "I want to build muscle but I've never lifted weights before. Where do I start?",
+    "ideal_response_criteria": [
+      "recommends a beginner-appropriate program",
+      "mentions compound movements",
+      "sets realistic expectations",
+      "addresses nutrition basics"
+    ]
+  },
+  {
+    "id": 8,
+    "user_context": {
+      "recent_workouts": ["gym 6 days straight", "gym", "gym", "gym", "gym", "gym"],
+      "biometrics": {"weight_kg": 80, "resting_hr": 68, "fitness_level": "intermediate"},
+      "goal": "muscle gain"
+    },
+    "question": "I've been training every day but I'm feeling tired and my lifts are going down. What's happening?",
+    "ideal_response_criteria": [
+      "identifies overtraining symptoms",
+      "references 6 consecutive training days",
+      "recommends rest and recovery",
+      "explains supercompensation principle"
+    ]
+  },
+  {
+    "id": 9,
+    "user_context": {
+      "recent_workouts": ["CrossFit 45min", "running 8km", "CrossFit 45min", "rest", "running 10km"],
+      "biometrics": {"weight_kg": 72, "resting_hr": 60, "fitness_level": "advanced"},
+      "goal": "weight loss"
+    },
+    "question": "I've been eating 1800 calories and working out 5 times a week but haven't lost weight in a month. Why?",
+    "ideal_response_criteria": [
+      "suggests calorie tracking accuracy check",
+      "references high training volume",
+      "mentions metabolic adaptation",
+      "gives actionable next steps"
+    ]
+  },
+  {
+    "id": 10,
+    "user_context": {
+      "recent_workouts": ["10min walk", "rest", "15min walk"],
+      "biometrics": {"weight_kg": 90, "resting_hr": 82, "fitness_level": "beginner"},
+      "goal": "improve endurance"
+    },
+    "question": "I want to run a 5K but I get out of breath after just 5 minutes of jogging. How do I build up?",
+    "ideal_response_criteria": [
+      "references run/walk intervals",
+      "sets a realistic timeline",
+      "acknowledges beginner fitness level",
+      "gives progressive overload guidance"
+    ]
+  },
+  {
+    "id": 11,
+    "user_context": {
+      "recent_workouts": ["push day", "pull day", "legs", "rest", "push day", "pull day"],
+      "biometrics": {"weight_kg": 76, "resting_hr": 63, "fitness_level": "intermediate"},
+      "goal": "muscle gain"
+    },
+    "question": "I've been following the same program for 6 months and progress has slowed. Should I change my program?",
+    "ideal_response_criteria": [
+      "addresses adaptation plateau",
+      "suggests program variation strategies",
+      "references 6-month training history",
+      "recommends progressive overload adjustments"
+    ]
+  },
+  {
+    "id": 12,
+    "user_context": {
+      "recent_workouts": ["deadlifts 180kg", "sprints 8x100m", "lower body strength", "rest"],
+      "biometrics": {"weight_kg": 92, "resting_hr": 55, "fitness_level": "advanced"},
+      "goal": "injury prevention"
+    },
+    "question": "I have chronically tight hamstrings and lower back pain. How do I train safely?",
+    "ideal_response_criteria": [
+      "recommends professional assessment if severe",
+      "suggests specific mobility work",
+      "references heavy lifting history",
+      "gives movement modifications"
+    ]
+  },
+  {
+    "id": 13,
+    "user_context": {
+      "recent_workouts": ["30min aerobics class", "rest", "30min aerobics class"],
+      "biometrics": {"weight_kg": 68, "resting_hr": 76, "fitness_level": "beginner"},
+      "goal": "weight loss"
+    },
+    "question": "What should I eat after my workout for weight loss?",
+    "ideal_response_criteria": [
+      "recommends protein-rich post-workout meal",
+      "gives specific food examples",
+      "addresses calorie balance for weight loss",
+      "references workout type (aerobics)"
+    ]
+  },
+  {
+    "id": 14,
+    "user_context": {
+      "recent_workouts": ["5km run 28min", "tempo run 6km", "long run 15km", "rest", "intervals 5x1km"],
+      "biometrics": {"weight_kg": 66, "resting_hr": 58, "fitness_level": "intermediate"},
+      "goal": "improve endurance"
+    },
+    "question": "My mile time has been stuck at 7:30 for 2 months despite consistent training. What am I missing?",
+    "ideal_response_criteria": [
+      "references existing training structure",
+      "suggests speed work or structured intervals",
+      "identifies potential training gap",
+      "gives specific workout adjustment"
+    ]
+  },
+  {
+    "id": 15,
+    "user_context": {
+      "recent_workouts": ["chest", "back", "legs", "shoulders", "arms", "full body", "rest"],
+      "biometrics": {"weight_kg": 84, "resting_hr": 57, "fitness_level": "advanced"},
+      "goal": "muscle gain"
+    },
+    "question": "I'm training 6 days a week but feeling burnt out and dreading going to the gym. Should I push through?",
+    "ideal_response_criteria": [
+      "does NOT recommend pushing through burnout",
+      "references 6-day training frequency",
+      "explains psychological burnout vs physical fatigue",
+      "suggests structured deload"
+    ]
+  },
+  {
+    "id": 16,
+    "user_context": {
+      "recent_workouts": ["no recent exercise — sedentary for 2 years"],
+      "biometrics": {"weight_kg": 85, "resting_hr": 78, "fitness_level": "beginner"},
+      "goal": "general fitness"
+    },
+    "question": "I'm 32 years old and haven't exercised in 2 years. What's the safest way to start?",
+    "ideal_response_criteria": [
+      "recommends starting slow and low intensity",
+      "suggests medical clearance if needed",
+      "gives a beginner-specific week 1 plan",
+      "addresses habit formation"
+    ]
+  },
+  {
+    "id": 17,
+    "user_context": {
+      "recent_workouts": ["gym 4x/week for 3 months", "cardio 2x/week"],
+      "biometrics": {"weight_kg": 74, "resting_hr": 65, "fitness_level": "intermediate"},
+      "goal": "weight loss"
+    },
+    "question": "I've lost 5kg over 3 months but my weight hasn't moved in the last 3 weeks. What should I do?",
+    "ideal_response_criteria": [
+      "explains weight loss plateau mechanics",
+      "references 3-month training history",
+      "suggests calorie deficit adjustment or diet break",
+      "mentions non-scale progress indicators"
+    ]
+  },
+  {
+    "id": 18,
+    "user_context": {
+      "recent_workouts": ["long run 32km", "recovery run 8km", "tempo 14km", "intervals", "long run 28km"],
+      "biometrics": {"weight_kg": 64, "resting_hr": 48, "fitness_level": "advanced"},
+      "goal": "improve endurance"
+    },
+    "question": "I want to qualify for the Boston Marathon next year. My current best is 3:45. What do I need to change?",
+    "ideal_response_criteria": [
+      "acknowledges Boston qualifier time requirements",
+      "references current performance and training volume",
+      "suggests specific training periodization",
+      "gives realistic timeline assessment"
+    ]
+  },
+  {
+    "id": 19,
+    "user_context": {
+      "recent_workouts": ["push-ups + dips (felt shoulder pop)", "rest", "rest"],
+      "biometrics": {"weight_kg": 72, "resting_hr": 74, "fitness_level": "beginner"},
+      "goal": "general fitness"
+    },
+    "question": "I think I pulled my shoulder doing push-ups 3 days ago. It still hurts. What should I do?",
+    "ideal_response_criteria": [
+      "recommends professional medical assessment",
+      "does not recommend training through sharp pain",
+      "suggests RICE or similar protocol",
+      "gives safe alternative movements during recovery"
+    ]
+  },
+  {
+    "id": 20,
+    "user_context": {
+      "recent_workouts": ["upper body 3x/week", "lower body 2x/week"],
+      "biometrics": {"weight_kg": 70, "resting_hr": 67, "fitness_level": "intermediate"},
+      "goal": "muscle gain"
+    },
+    "question": "How much protein do I actually need to build muscle? I'm eating about 100g per day.",
+    "ideal_response_criteria": [
+      "gives specific protein target per kg of bodyweight",
+      "references user's actual weight (70kg)",
+      "calculates target based on user's data",
+      "addresses protein timing"
+    ]
+  },
+  {
+    "id": 21,
+    "user_context": {
+      "recent_workouts": ["squat 160kg", "deadlift 200kg", "bench 120kg", "overhead press"],
+      "biometrics": {"weight_kg": 95, "resting_hr": 60, "fitness_level": "advanced"},
+      "goal": "flexibility"
+    },
+    "question": "I'm a competitive powerlifter but my hip flexibility is limiting my squat depth. How do I fix this?",
+    "ideal_response_criteria": [
+      "references powerlifting-specific squat mechanics",
+      "gives targeted hip mobility exercises",
+      "acknowledges muscle mass impact on flexibility",
+      "suggests consistent routine with frequency"
+    ]
+  },
+  {
+    "id": 22,
+    "user_context": {
+      "recent_workouts": ["20min walk", "20min walk", "rest", "20min walk"],
+      "biometrics": {"weight_kg": 78, "resting_hr": 80, "fitness_level": "beginner"},
+      "goal": "improve endurance"
+    },
+    "question": "Is 20 minutes of walking every day enough exercise, or do I need to do more?",
+    "ideal_response_criteria": [
+      "validates walking as a good starting point",
+      "references WHO exercise guidelines",
+      "suggests progression path from walking",
+      "references user's current fitness level"
+    ]
+  },
+  {
+    "id": 23,
+    "user_context": {
+      "recent_workouts": ["45min strength", "30min run", "rest", "45min strength"],
+      "biometrics": {"weight_kg": 76, "resting_hr": 66, "fitness_level": "intermediate"},
+      "goal": "weight loss"
+    },
+    "question": "I only have 30 minutes today. Should I do cardio or weights if my goal is fat loss?",
+    "ideal_response_criteria": [
+      "recommends specific 30-minute option with reasoning",
+      "references user's existing program balance",
+      "explains EPOC or afterburn effect",
+      "gives a specific workout structure"
+    ]
+  },
+  {
+    "id": 24,
+    "user_context": {
+      "recent_workouts": ["sport-specific practice 5x/week", "gym 3x/week"],
+      "biometrics": {"weight_kg": 82, "resting_hr": 54, "fitness_level": "advanced"},
+      "goal": "general fitness"
+    },
+    "question": "I'm an athlete in off-season. How should I structure training to maintain fitness without overworking?",
+    "ideal_response_criteria": [
+      "addresses maintenance vs development training",
+      "references athlete's current training volume",
+      "suggests periodization for off-season",
+      "balances sport-specific and general conditioning"
+    ]
+  },
+  {
+    "id": 25,
+    "user_context": {
+      "recent_workouts": ["gym 3x/week — can't seem to gain weight"],
+      "biometrics": {"weight_kg": 60, "resting_hr": 72, "fitness_level": "beginner"},
+      "goal": "muscle gain"
+    },
+    "question": "I'm naturally very thin and eat a lot but can't gain weight or muscle. What am I doing wrong?",
+    "ideal_response_criteria": [
+      "addresses hardgainer metabolism",
+      "suggests caloric surplus calculation based on weight (60kg)",
+      "recommends specific compound exercises",
+      "mentions tracking food intake accurately"
+    ]
+  },
+  {
+    "id": 26,
+    "user_context": {
+      "recent_workouts": ["heavy leg day (squats, leg press, lunges)", "rest"],
+      "biometrics": {"weight_kg": 74, "resting_hr": 64, "fitness_level": "intermediate"},
+      "goal": "muscle gain"
+    },
+    "question": "I'm extremely sore 2 days after leg day and can barely walk down stairs. Should I train today?",
+    "ideal_response_criteria": [
+      "explains DOMS and its meaning",
+      "references heavy leg day context",
+      "gives guidance on training through soreness",
+      "suggests active recovery options"
+    ]
+  },
+  {
+    "id": 27,
+    "user_context": {
+      "recent_workouts": ["long run 18km", "tempo 10km", "easy run 8km", "long run 22km"],
+      "biometrics": {"weight_kg": 67, "resting_hr": 55, "fitness_level": "advanced"},
+      "goal": "injury prevention"
+    },
+    "question": "My IT band is flaring up on runs over 15km. How do I keep training without making it worse?",
+    "ideal_response_criteria": [
+      "identifies IT band syndrome characteristics",
+      "references high training volume",
+      "gives specific foam rolling or stretching protocol",
+      "addresses load management strategy"
+    ]
+  },
+  {
+    "id": 28,
+    "user_context": {
+      "recent_workouts": ["no structured exercise — desk job"],
+      "biometrics": {"weight_kg": 72, "resting_hr": 76, "fitness_level": "beginner"},
+      "goal": "flexibility"
+    },
+    "question": "I wake up every morning feeling extremely stiff, especially in my back and hips. What should I do?",
+    "ideal_response_criteria": [
+      "recommends morning mobility routine",
+      "references sedentary/desk job as contributing factor",
+      "gives specific exercises or stretches",
+      "suggests realistic time commitment (5-10 minutes)"
+    ]
+  },
+  {
+    "id": 29,
+    "user_context": {
+      "recent_workouts": ["gym 3x/week (30-40min sessions)", "weekend cycling occasionally"],
+      "biometrics": {"weight_kg": 80, "resting_hr": 68, "fitness_level": "intermediate"},
+      "goal": "general fitness"
+    },
+    "question": "I sit at a desk 9 hours a day. What's the most important thing I can do to stay healthy?",
+    "ideal_response_criteria": [
+      "addresses sedentary work risks",
+      "gives specific actionable desk/workplace advice",
+      "references existing workout routine",
+      "prioritises most impactful change"
+    ]
+  },
+  {
+    "id": 30,
+    "user_context": {
+      "recent_workouts": ["strength 4x/week", "cardio 2x/week", "structured diet at 2400 cal"],
+      "biometrics": {"weight_kg": 84, "resting_hr": 58, "fitness_level": "advanced"},
+      "goal": "body recomposition"
+    },
+    "question": "I want to lose the last 5kg of fat while maintaining my muscle mass. My progress has completely stalled.",
+    "ideal_response_criteria": [
+      "addresses body recomp difficulty at advanced stage",
+      "suggests caloric deficit with high protein",
+      "references existing training structure",
+      "mentions patience and non-scale metrics"
+    ]
+  }
+]

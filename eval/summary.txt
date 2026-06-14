@@ -1,0 +1,18 @@
+==============================================================
+FitRx Model Evaluation Summary
+Test cases: 30  |  Score range per dimension: 1–5
+==============================================================
+
+Fine-tuned model scored +6.9% vs base model overall
+  Overall avg:  fine-tuned 3.89  vs  base 3.64
+
+Per-dimension breakdown:
+  Relevance                fine-tuned 3.97  base 3.70  (+7.2%)
+  Personalization          fine-tuned 3.03  base 2.83  (+7.1%)
+  Actionability            fine-tuned 4.73  base 4.43  (+6.8%)
+  Criteria coverage        fine-tuned 3.83  base 3.60  (+6.5%)
+
+Latency (avg):
+  Fine-tuned: 6097 ms
+  Base:       5091 ms
+==============================================================

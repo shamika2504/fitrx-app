@@ -1,12 +1,15 @@
+import asyncio
+import os
+
 from fastapi import APIRouter
 from google.cloud import bigquery
-import os
 
 router = APIRouter()
 client = bigquery.Client(project=os.getenv("GCP_PROJECT_ID"))
 
+
 @router.get("/overview/{participant_id}")
-def get_biometrics_overview(participant_id: int):
+async def get_biometrics_overview(participant_id: int):
     query = """
         SELECT
             date,
@@ -27,12 +30,14 @@ def get_biometrics_overview(participant_id: int):
             bigquery.ScalarQueryParameter("participant_id", "INT64", participant_id)
         ]
     )
-    results = client.query(query, job_config=job_config).result()
+    results = await asyncio.to_thread(
+        lambda: list(client.query(query, job_config=job_config).result())
+    )
     return [dict(row) for row in results]
 
 
 @router.get("/sleep-impact/{participant_id}")
-def get_sleep_impact(participant_id: int):
+async def get_sleep_impact(participant_id: int):
     query = """
         SELECT
             b.hours_sleep,
@@ -49,5 +54,7 @@ def get_sleep_impact(participant_id: int):
             bigquery.ScalarQueryParameter("participant_id", "INT64", participant_id)
         ]
     )
-    results = client.query(query, job_config=job_config).result()
+    results = await asyncio.to_thread(
+        lambda: list(client.query(query, job_config=job_config).result())
+    )
     return [dict(row) for row in results]

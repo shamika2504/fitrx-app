@@ -1,0 +1,722 @@
+{
+  "1": {
+    "id": 1,
+    "question": "Should I do cardio or strength training today to lose weight faster?",
+    "base": {
+      "response": "Hello! I'm FitRx, your personal fitness coach. Let's look at your data to give you the best advice for today.\n\nYou've been active recently with a **45-minute steady run** and a **30-minute walk**. Your current weight is **82 kg**, your resting heart rate is **72 bpm**, and you identify as a **beginner** fitness level with a primary goal of **weight loss**.\n\nGiven your recent workouts and your goal, **I recommend focusing on a strength training session today.**\n\nHere's why:\n\n1.  **Variety and Balance:** You've already done two cardio sessions (run and walk). Incorporating strength training will provide a balanced approach to your fitness and weight loss journey.\n2.  **Muscle Mass and Metabolism:** While cardio is excellent for burning calories",
+      "scores": {
+        "relevance": 5,
+        "personalization": 5,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4398
+    },
+    "finetuned": {
+      "response": "Based on your data: 45min steady run, one rest day, and a ",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 6409
+    }
+  },
+  "2": {
+    "id": 2,
+    "question": "Should I do HIIT or steady-state cardio tomorrow?",
+    "base": {
+      "response": "Hello there! FitRx here, ready to help you optimize your training.\n\nBased on your",
+      "scores": {
+        "relevance": 5,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 10996
+    },
+    "finetuned": {
+      "response": "Based on your data: 45min run, upper strength, rest, and 3",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 23493
+    }
+  },
+  "3": {
+    "id": 3,
+    "question": "My bench press has stalled for 3 weeks at 100kg. What should I adjust?",
+    "base": {
+      "response": "Hello there! FitRx here, ready to help you bust through that bench press",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3387
+    },
+    "finetuned": {
+      "response": "Based on your data: advanced fitness level with a resting heart rate of ",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 5698
+    }
+  },
+  "4": {
+    "id": 4,
+    "question": "My knees hurt after running. Should I stop completely?",
+    "base": {
+      "response": "Hey there! It's great you're reaching out about this. Knee pain after running is",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 2961
+    },
+    "finetuned": {
+      "response": "Based on your data: fitness level is beginner with a high resting HR of 75 bpm,",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4802
+    }
+  },
+  "5": {
+    "id": 5,
+    "question": "Should I eat before my morning workouts if I want to lose fat?",
+    "base": {
+      "response": "Hey there! As your FitRx coach, let's break down your morning workout strategy for your",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 11384
+    },
+    "finetuned": {
+      "response": "Based on your data: 2 morning runs (5km, 6km)",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4213
+    }
+  },
+  "6": {
+    "id": 6,
+    "question": "I ran a marathon 3 days ago. When should I start training again?",
+    "base": {
+      "response": "Hello there! Congratulations on completing your marathon (42.2km) just three days ago \u2013",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3170
+    },
+    "finetuned": {
+      "response": "Based on your data: Marathon race 3 days ago with a resting HR of ",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 5011
+    }
+  },
+  "7": {
+    "id": 7,
+    "question": "I want to build muscle but I've never lifted weights before. Where do I start?",
+    "base": {
+      "response": "Welcome to your fitness journey! It's fantastic that you're ready to build muscle. Starting",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 6660
+    },
+    "finetuned": {
+      "response": "Based on your data: fitness level is beginner with a high resting HR of 8",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4194
+    }
+  },
+  "8": {
+    "id": 8,
+    "question": "I've been training every day but I'm feeling tired and my lifts are going down. What's happening?",
+    "base": {
+      "response": "Hey there! As FitRx, I'm here to help you get back on track.",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3994
+    },
+    "finetuned": {
+      "response": "Based on your session data: gym 6 days straight with an intermediate fitness level and a resting HR of 68 bpm. Your resting HR is slightly elevated (above 60 bpm) \u2014 for your fitness level, this indicates incomplete recovery. The feeling of tiredness and decreasing lifts strongly suggests you are overreaching. Your body isn't getting enough time to repair and adapt to the training load.\n\n**Here's what I recommend:**\n\n",
+      "scores": {
+        "relevance": 5,
+        "personalization": 5,
+        "actionability": 2,
+        "criteria_coverage": 3
+      },
+      "latency_ms": 4400
+    }
+  },
+  "9": {
+    "id": 9,
+    "question": "I've been eating 1800 calories and working out 5 times a week but haven't lost weight in a month. Why?",
+    "base": {
+      "response": "Hey there! I understand your frustration. It's incredibly disheartening to put in so much",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 2813
+    },
+    "finetuned": {
+      "response": "Based on your data: two 45-minute CrossFit sessions, two",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4450
+    }
+  },
+  "10": {
+    "id": 10,
+    "question": "I want to run a 5K but I get out of breath after just 5 minutes of jogging. How do I build up?",
+    "base": {
+      "response": "Hello there! It's fantastic that you have the goal of running a 5K. That",
+      "scores": {
+        "relevance": 1,
+        "personalization": 1,
+        "actionability": 1,
+        "criteria_coverage": 1
+      },
+      "latency_ms": 11829
+    },
+    "finetuned": {
+      "response": "Based on your data: weight of 90 kg with a resting HR of ",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4249
+    }
+  },
+  "11": {
+    "id": 11,
+    "question": "I've been following the same program for 6 months and progress has slowed. Should I change my program?",
+    "base": {
+      "response": "Hey there! I'm FitRx, and I'm ready to help you bust through this",
+      "scores": {
+        "relevance": 1,
+        "personalization": 1,
+        "actionability": 1,
+        "criteria_coverage": 1
+      },
+      "latency_ms": 3800
+    },
+    "finetuned": {
+      "response": "Based on your data: 6 months on the same PPL program with slowed progress \u2014 this is",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4825
+    }
+  },
+  "12": {
+    "id": 12,
+    "question": "I have chronically tight hamstrings and lower back pain. How do I train safely?",
+    "base": {
+      "response": "Hello there! As FitRx, I understand your concern about chronic tight hamstrings and lower",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3888
+    },
+    "finetuned": {
+      "response": "Based on your data: advanced fitness level with a strong resting heart rate of 55 bpm (",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4289
+    }
+  },
+  "13": {
+    "id": 13,
+    "question": "What should I eat after my workout for weight loss?",
+    "base": {
+      "response": "Great job with your recent 30-minute aerobics classes! As a beginner, consistently engaging in",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3479
+    },
+    "finetuned": {
+      "response": "Based on your data: 30 minutes of aerobics with a resting HR of 7",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4294
+    }
+  },
+  "14": {
+    "id": 14,
+    "question": "My mile time has been stuck at 7:30 for 2 months despite consistent training. What am I missing?",
+    "base": {
+      "response": "Hello there! As FitRx, I've reviewed your running metrics and biometrics",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3478
+    },
+    "finetuned": {
+      "response": "Based on your data: 5km run in 28min (controlled easy pace), tempo",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 12340
+    }
+  },
+  "15": {
+    "id": 15,
+    "question": "I'm training 6 days a week but feeling burnt out and dreading going to the gym. Should I push through?",
+    "base": {
+      "response": "Hey there! I'm FitRx, and I'm here to help you navigate",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4457
+    },
+    "finetuned": {
+      "response": "Based on your session data: chest, back, legs, shoulders, arms, full",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 5481
+    }
+  },
+  "16": {
+    "id": 16,
+    "question": "I'm 32 years old and haven't exercised in 2 years. What's the safest way to start?",
+    "base": {
+      "response": "Welcome back to fitness! It's fantastic that you're taking this step to improve your general",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3408
+    },
+    "finetuned": {
+      "response": "Based on your data: 32 years old with 2 years of inactivity, resting HR of",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 10848
+    }
+  },
+  "17": {
+    "id": 17,
+    "question": "I've lost 5kg over 3 months but my weight hasn't moved in the last 3 weeks. What should I do?",
+    "base": {
+      "response": "Hello there! As FitRx, I'm here to help you get past this hurdle.",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 10035
+    },
+    "finetuned": {
+      "response": "Based on your data: 4x gym + 2x cardio per week for 3 months",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4678
+    }
+  },
+  "18": {
+    "id": 18,
+    "question": "I want to qualify for the Boston Marathon next year. My current best is 3:45. What do I need to change?",
+    "base": {
+      "response": "Hello there! It's great to hear your ambition to qualify for the Boston Marathon",
+      "scores": {
+        "relevance": 1,
+        "personalization": 1,
+        "actionability": 1,
+        "criteria_coverage": 1
+      },
+      "latency_ms": 3725
+    },
+    "finetuned": {
+      "response": "Based on your workout data: long run 32km, recovery run 8km,",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4134
+    }
+  },
+  "19": {
+    "id": 19,
+    "question": "I think I pulled my shoulder doing push-ups 3 days ago. It still hurts. What should I do?",
+    "base": {
+      "response": "It sounds like you're in a tough spot with your shoulder, and that \"pop",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4476
+    },
+    "finetuned": {
+      "response": "Based on your data: push-ups + dips with a \"shoulder pop\" 3",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4546
+    }
+  },
+  "20": {
+    "id": 20,
+    "question": "How much protein do I actually need to build muscle? I'm eating about 100g per day.",
+    "base": {
+      "response": "Hello there! Let's get you set up for optimal muscle gain.\n\nBased",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3166
+    },
+    "finetuned": {
+      "response": "Based on your data: upper body 3x/week, lower body 2x/week with an intermediate fitness level (resting HR: 67 bpm) and a weight of 70 kg with a goal of muscle gain. Your current protein intake is 100g per day.\n\nFor optimal muscle gain, it is recommended to consume 1.6 to 2.2 grams of protein per kilogram of body weight.\nFor your weight of 70 kg:\n*   Minimum optimal protein: 1.6 g/kg * 70 kg = ",
+      "scores": {
+        "relevance": 5,
+        "personalization": 4,
+        "actionability": 4,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4167
+    }
+  },
+  "21": {
+    "id": 21,
+    "question": "I'm a competitive powerlifter but my hip flexibility is limiting my squat depth. How do I fix this?",
+    "base": {
+      "response": "Hello there! It's great to see your dedication to strength, with impressive lifts like a 160kg squat, 200kg deadlift, and 120kg bench press. As an advanced lifter at 95kg with a resting HR of 60 bpm, you've clearly put in the work.\n\nIt's very common for powerlifters to hit a plateau in squat depth due to hip flexibility, even with your level of strength. Addressing this will not only improve your performance in the 160kg squat but also contribute to overall joint health and injury prevention.\n\nHere's specific, actionable advice to help you improve your hip flexibility and achieve better squat depth:",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3960
+    },
+    "finetuned": {
+      "response": "Based on your session data: squat 160kg, deadlift 200",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 10031
+    }
+  },
+  "22": {
+    "id": 22,
+    "question": "Is 20 minutes of walking every day enough exercise, or do I need to do more?",
+    "base": {
+      "response": "Hello there! FitRx here, ready to help you on your fitness journey.\n\nIt's",
+      "scores": {
+        "relevance": 1,
+        "personalization": 1,
+        "actionability": 1,
+        "criteria_coverage": 1
+      },
+      "latency_ms": 3727
+    },
+    "finetuned": {
+      "response": "Based on your data: 20min walks with one rest day look controlled for",
+      "scores": {
+        "relevance": 1,
+        "personalization": 1,
+        "actionability": 1,
+        "criteria_coverage": 0
+      },
+      "latency_ms": 4268
+    }
+  },
+  "23": {
+    "id": 23,
+    "question": "I only have 30 minutes today. Should I do cardio or weights if my goal is fat loss?",
+    "base": {
+      "response": "Hello there! FitRx here.\n\nIt's great to see your consistent effort",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3701
+    },
+    "finetuned": {
+      "response": "Based on your data: fitness level: intermediate, resting HR of 66 bpm",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 11070
+    }
+  },
+  "24": {
+    "id": 24,
+    "question": "I'm an athlete in off-season. How should I structure training to maintain fitness without overworking?",
+    "base": {
+      "response": "Hello there! FitRx here. It's great to hear you're an",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 9215
+    },
+    "finetuned": {
+      "response": "Based on your data: sport-specific practice 5x/week with 3 gym sessions",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 5220
+    }
+  },
+  "25": {
+    "id": 25,
+    "question": "I'm naturally very thin and eat a lot but can't gain weight or muscle. What am I doing wrong?",
+    "base": {
+      "response": "Hello there! As FitRx, I understand your frustration. It sounds like you're putting",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3786
+    },
+    "finetuned": {
+      "response": "Based on your data: 60 kg, resting HR of 72 bpm (slightly elevated",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 5011
+    }
+  },
+  "26": {
+    "id": 26,
+    "question": "I'm extremely sore 2 days after leg day and can barely walk down stairs. Should I train today?",
+    "base": {
+      "response": "Hey there! Thanks for reaching out. Based on your description of being \"extremely sore",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3494
+    },
+    "finetuned": {
+      "response": "Based on your session data: heavy leg day with squats, leg press, and lung",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4468
+    }
+  },
+  "27": {
+    "id": 27,
+    "question": "My IT band is flaring up on runs over 15km. How do I keep training without making it worse?",
+    "base": {
+      "response": "Hello there! I'm sorry to hear your IT band is flaring up,",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 8630
+    },
+    "finetuned": {
+      "response": "Based on your session data: long run 18km, tempo 10km",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4305
+    }
+  },
+  "28": {
+    "id": 28,
+    "question": "I wake up every morning feeling extremely stiff, especially in my back and hips. What should I do?",
+    "base": {
+      "response": "Hello there! As FitRx, I understand you're waking up feeling extremely stiff, particularly in",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3149
+    },
+    "finetuned": {
+      "response": "Based on your data: 72 kg, resting HR of 76 bpm (elevated, indicating poor recovery) and fitness level: beginner. Your goal is flexibility, and you're experiencing severe morning stiffness in your back and hips. This is common for individuals with desk jobs \u2014 prolonged sitting shortens hip flexors and stiff",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4257
+    }
+  },
+  "29": {
+    "id": 29,
+    "question": "I sit at a desk 9 hours a day. What's the most important thing I can do to stay healthy?",
+    "base": {
+      "response": "Hello there! FitRx here, ready to help you navigate the challenges of a desk job while maintaining your general fitness goals.\n\nYou've highlighted a critical issue: sitting 9 hours a day. Even with your current commitment to the gym 3x/week (30-40 min sessions) and occasional weekend cycling, prolonged sitting is a significant health risk that your workouts alone can't fully counteract. Your current weight of **80 kg** and resting heart rate of **68 bpm** suggest a decent",
+      "scores": {
+        "relevance": 5,
+        "personalization": 4,
+        "actionability": 4,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4099
+    },
+    "finetuned": {
+      "response": "Based on your data: 3 gym sessions per week of 30-40",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3584
+    }
+  },
+  "30": {
+    "id": 30,
+    "question": "I want to lose the last 5kg of fat while maintaining my muscle mass. My progress has completely stalled.",
+    "base": {
+      "response": "It sounds like you're in a common, yet frustrating, position for advanced lifters aiming",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 3464
+    },
+    "finetuned": {
+      "response": "Based on your data: 4 strength sessions/week and 2 cardio sessions",
+      "scores": {
+        "relevance": 4,
+        "personalization": 3,
+        "actionability": 5,
+        "criteria_coverage": 4
+      },
+      "latency_ms": 4185
+    }
+  }
+}
