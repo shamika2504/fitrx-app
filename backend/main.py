@@ -1,6 +1,7 @@
 import logging
 import os
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 
 import asyncpg
 from dotenv import load_dotenv
@@ -63,4 +64,8 @@ app.include_router(recommendations.router, prefix="/recommendations",  tags=["Re
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "version": os.getenv("APP_VERSION", "local"),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
