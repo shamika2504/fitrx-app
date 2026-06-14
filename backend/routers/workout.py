@@ -1,7 +1,7 @@
 import asyncio
 import os
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from google.cloud import bigquery
 
 router = APIRouter()
