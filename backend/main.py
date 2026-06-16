@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 from core.secrets import load_secrets, get_config
-from routers import biometrics, recommendations, workout
+from routers import biometrics, monitoring, recommendations, workout
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +60,7 @@ app.add_middleware(
 app.include_router(workout.router,         prefix="/workout",         tags=["Workout"])
 app.include_router(biometrics.router,      prefix="/biometrics",      tags=["Biometrics"])
 app.include_router(recommendations.router, prefix="/recommendations",  tags=["Recommendations"])
+app.include_router(monitoring.router,      prefix="/monitoring",       tags=["Monitoring"])
 
 
 @app.get("/health")
