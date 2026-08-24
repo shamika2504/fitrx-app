@@ -65,18 +65,28 @@ async def get_user_workout_history(user_id: int, lookback_days: int = 30) -> str
     Returns:
         JSON with total_sessions and a list of workout records.
     """
+    # lookback_days is relative to this participant's most recent logged
+    # session, not wall-clock CURRENT_DATE() — the training dataset is a
+    # fixed historical snapshot, so anchoring to real "today" would always
+    # return zero rows once that snapshot ages past the lookback window.
     query = """
+        WITH latest AS (
+            SELECT MAX(date) AS ref_date
+            FROM `fitrx_warehouse.fact_workout_logs`
+            WHERE participant_id = @user_id
+        )
         SELECT
-            CAST(date AS STRING)          AS date,
-            activity_type,
-            duration_minutes,
-            intensity,
-            ROUND(calories_burned, 2)     AS calories_burned,
-            avg_heart_rate
-        FROM `fitrx_warehouse.fact_workout_logs`
-        WHERE participant_id = @user_id
-          AND date >= DATE_SUB(CURRENT_DATE(), INTERVAL @lookback_days DAY)
-        ORDER BY date DESC
+            CAST(w.date AS STRING)          AS date,
+            w.activity_type,
+            w.duration_minutes,
+            w.intensity,
+            ROUND(w.calories_burned, 2)     AS calories_burned,
+            w.avg_heart_rate
+        FROM `fitrx_warehouse.fact_workout_logs` w
+        CROSS JOIN latest
+        WHERE w.participant_id = @user_id
+          AND w.date >= DATE_SUB(latest.ref_date, INTERVAL @lookback_days DAY)
+        ORDER BY w.date DESC
         LIMIT 50
     """
     job_config = bigquery.QueryJobConfig(
@@ -324,6 +334,11 @@ async def get_recommendations(
 @router.get("/latest-metrics/{participant_id}")
 async def get_latest_metrics(participant_id: int):
     query = """
+        WITH latest AS (
+            SELECT MAX(date) AS ref_date
+            FROM `fitrx_warehouse.fact_workout_logs`
+            WHERE participant_id = @participant_id
+        )
         SELECT
             w.activity_type,
             ROUND(AVG(w.calories_burned), 2)   AS avg_calories,
@@ -333,8 +348,9 @@ async def get_latest_metrics(participant_id: int):
         FROM `fitrx_warehouse.fact_workout_logs` w
         JOIN `fitrx_warehouse.fact_biometrics` b
             ON w.participant_id = b.participant_id AND w.date = b.date
+        CROSS JOIN latest
         WHERE w.participant_id = @participant_id
-          AND w.date >= DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
+          AND w.date >= DATE_SUB(latest.ref_date, INTERVAL 7 DAY)
         GROUP BY w.activity_type
     """
     job_config = bigquery.QueryJobConfig(
